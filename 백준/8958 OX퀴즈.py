@@ -1,20 +1,18 @@
 
 
 A = int(input())
-arr = []
 
+arr = list()
 for i in range(A):
-    arr.append(input())
-    arr[i] = arr[i].split('X')
-    i += 1
-    print(arr, i)
+    arr.append(list(input()))
 
-count = 0
-j = 0
-for j in arr:
-    if 'O' in j:
-        count += 1
-print(count, j)
-
-# for i in range(0, 10):
-#   print(j.count(str(i)))
+for i in range(0, A):
+    count = 0
+    sum = 0
+    for j in range(0, len(arr[i])):
+        if 'O' in arr[i][j]:
+            count += 1
+            sum = sum + count
+        else:
+            count = 0
+    print(sum)
