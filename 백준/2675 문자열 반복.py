@@ -1,13 +1,13 @@
 
 num = int(input())
-arr = []
-for i in range(num):
-    arr = list(input())
-    val = int(arr[0])
+arr = list()
 
-res = []
-i = 2
-for i in range(2, len(arr)):
-    for j in arr[i]:
-        res.append(val*j)
-print(''.join(res))
+for i in range(num):
+    arr.append(list(input()))
+
+for i in range(num):
+    res = []
+    val = int(arr[i][0])
+    for j in range(2, len(arr[i])):
+        res.append(val*arr[i][j])
+    print(''.join(res))
