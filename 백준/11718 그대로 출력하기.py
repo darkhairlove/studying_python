@@ -1,3 +1,5 @@
-arr = list()
-arr.append(input())
-print(arr)
+while True:
+    try:
+        print(input())
+    except EOFError:
+        break
