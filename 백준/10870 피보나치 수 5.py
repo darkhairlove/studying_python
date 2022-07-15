@@ -1,11 +1,10 @@
 num = int(input())
 
-i = 0
-j = 1
-k = 0
 
-for h in range(1, num):
-    k = i + j
-    i = j + k
-    j = i + k
-print(k, i, j)
+def fib(num):
+    if num <= 1:
+        return num
+    return fib(num-1) + fib(num-2)
+
+
+print(fib(num))
