@@ -6,5 +6,4 @@ def fib(num):
         return num
     return fib(num-1) + fib(num-2)
 
-
 print(fib(num))
