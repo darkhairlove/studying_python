@@ -9,7 +9,6 @@ def is_prime_number(x):
         i += 1
     return True
 
-
 def solution(nums):
     a = len(nums)
     answer = 0
@@ -20,7 +19,7 @@ def solution(nums):
             k = j+1
             while k < a:
                 if is_prime_number(nums[i]+nums[j]+nums[k]):
-                    answer += 1
+                    answer+=1
                 k += 1
             j += 1
         i += 1
