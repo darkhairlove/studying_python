@@ -1,5 +1,5 @@
 from collections import deque
-
+import sys
 # BFS 메서드 정의
 
 
@@ -20,20 +20,14 @@ def bfs(graph, start, visited):
                 visited[i] = True
 
 
+input = sys.stdin.readline
 # 각 노드가 연결된 정보를 표현(2차원 리스트)
-graph = [
-    [],
-    [2, 3, 8],
-    [1, 7],
-    [1, 4, 5],
-    [3, 5],
-    [3, 4],
-    [7],
-    [2, 6, 8],
-    [1, 7]
-]
+N, M, V = list(map(int, input().split()))
+graph = [[0]]
+for i in range(M):
+    graph.append(list(map(int, input().split())))
 # 각 노드가 방문된 정보를 표현 (1차원 리스트)
-visited = [False] * 9
+visited = [False] * N
 
 # 정의된 BFS 함수 호출
-bfs(graph, 1, visited)
+bfs(graph, V, visited)
