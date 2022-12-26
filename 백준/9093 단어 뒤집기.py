@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/9093
 num = int(input())
 
 for i in range(num):
