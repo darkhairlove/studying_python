@@ -16,8 +16,8 @@ def search():
                 ans = max(ans, cnt)
             else:
                 cnt = 1
-        cnt = 1
     for j in range(num):
+        cnt = 1
         for i in range(1, num):
             if arr[i-1][j] == arr[i][j]:
                 cnt += 1
