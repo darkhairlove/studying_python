@@ -2,7 +2,6 @@ num = int(input())
 arr = []
 for i in range(num):
     arr.append(input())
-con = 0
 for i in arr:
     se = []
     for k in range(len(i)-1):
